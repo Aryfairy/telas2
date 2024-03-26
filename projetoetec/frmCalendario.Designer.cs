@@ -36,7 +36,6 @@ namespace projetoetec
             this.dtpCalendario = new System.Windows.Forms.DateTimePicker();
             this.cboLaboratorio = new System.Windows.Forms.ComboBox();
             this.lblLaboratorio = new System.Windows.Forms.Label();
-            this.picMudarTema = new System.Windows.Forms.PictureBox();
             this.pnlOpc = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.lnkCadastro = new System.Windows.Forms.LinkLabel();
@@ -46,15 +45,17 @@ namespace projetoetec
             this.lnkConsultaGeral = new System.Windows.Forms.LinkLabel();
             this.lnkConsultaDia = new System.Windows.Forms.LinkLabel();
             this.picLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlConsultaGeral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMudarTema)).BeginInit();
             this.pnlOpc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlConsultaGeral
             // 
-            this.pnlConsultaGeral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(43)))), ((int)(((byte)(51)))));
+            this.pnlConsultaGeral.BackColor = System.Drawing.Color.Black;
+            this.pnlConsultaGeral.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlConsultaGeral.Controls.Add(this.btnGerar);
             this.pnlConsultaGeral.Controls.Add(this.lblCalendario);
             this.pnlConsultaGeral.Controls.Add(this.dtpCalendario);
@@ -69,7 +70,8 @@ namespace projetoetec
             // 
             // btnGerar
             // 
-            this.btnGerar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(225)))), ((int)(((byte)(104)))));
+            this.btnGerar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
+            this.btnGerar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGerar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGerar.Location = new System.Drawing.Point(426, 278);
             this.btnGerar.Margin = new System.Windows.Forms.Padding(2);
@@ -83,7 +85,7 @@ namespace projetoetec
             // 
             this.lblCalendario.AutoSize = true;
             this.lblCalendario.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCalendario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(215)))));
+            this.lblCalendario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
             this.lblCalendario.Location = new System.Drawing.Point(14, 79);
             this.lblCalendario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCalendario.Name = "lblCalendario";
@@ -93,6 +95,7 @@ namespace projetoetec
             // 
             // dtpCalendario
             // 
+            this.dtpCalendario.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(184)))), ((int)(((byte)(228)))));
             this.dtpCalendario.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpCalendario.Location = new System.Drawing.Point(135, 76);
             this.dtpCalendario.Margin = new System.Windows.Forms.Padding(2);
@@ -103,6 +106,7 @@ namespace projetoetec
             // 
             // cboLaboratorio
             // 
+            this.cboLaboratorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(184)))), ((int)(((byte)(228)))));
             this.cboLaboratorio.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLaboratorio.FormattingEnabled = true;
             this.cboLaboratorio.Location = new System.Drawing.Point(135, 19);
@@ -116,7 +120,7 @@ namespace projetoetec
             // 
             this.lblLaboratorio.AutoSize = true;
             this.lblLaboratorio.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLaboratorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(215)))));
+            this.lblLaboratorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
             this.lblLaboratorio.Location = new System.Drawing.Point(14, 19);
             this.lblLaboratorio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLaboratorio.Name = "lblLaboratorio";
@@ -124,19 +128,10 @@ namespace projetoetec
             this.lblLaboratorio.TabIndex = 0;
             this.lblLaboratorio.Text = "Laboratório:";
             // 
-            // picMudarTema
-            // 
-            this.picMudarTema.Image = ((System.Drawing.Image)(resources.GetObject("picMudarTema.Image")));
-            this.picMudarTema.Location = new System.Drawing.Point(0, 50);
-            this.picMudarTema.Name = "picMudarTema";
-            this.picMudarTema.Size = new System.Drawing.Size(32, 32);
-            this.picMudarTema.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picMudarTema.TabIndex = 3;
-            this.picMudarTema.TabStop = false;
-            // 
             // pnlOpc
             // 
-            this.pnlOpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(50)))));
+            this.pnlOpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(78)))), ((int)(((byte)(142)))));
+            this.pnlOpc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlOpc.Controls.Add(this.label3);
             this.pnlOpc.Controls.Add(this.lnkCadastro);
             this.pnlOpc.Controls.Add(this.label2);
@@ -156,7 +151,7 @@ namespace projetoetec
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
             this.label3.Location = new System.Drawing.Point(596, 15);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -170,7 +165,7 @@ namespace projetoetec
             this.lnkCadastro.AutoSize = true;
             this.lnkCadastro.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkCadastro.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lnkCadastro.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(158)))), ((int)(((byte)(23)))));
+            this.lnkCadastro.LinkColor = System.Drawing.Color.Black;
             this.lnkCadastro.Location = new System.Drawing.Point(620, 20);
             this.lnkCadastro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lnkCadastro.Name = "lnkCadastro";
@@ -184,7 +179,7 @@ namespace projetoetec
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
             this.label2.Location = new System.Drawing.Point(465, 15);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -198,7 +193,7 @@ namespace projetoetec
             this.lnkReserva.AutoSize = true;
             this.lnkReserva.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkReserva.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lnkReserva.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(158)))), ((int)(((byte)(23)))));
+            this.lnkReserva.LinkColor = System.Drawing.Color.Black;
             this.lnkReserva.Location = new System.Drawing.Point(488, 20);
             this.lnkReserva.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lnkReserva.Name = "lnkReserva";
@@ -212,7 +207,7 @@ namespace projetoetec
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
             this.label1.Location = new System.Drawing.Point(261, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
@@ -226,7 +221,7 @@ namespace projetoetec
             this.lnkConsultaGeral.AutoSize = true;
             this.lnkConsultaGeral.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkConsultaGeral.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lnkConsultaGeral.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(158)))), ((int)(((byte)(23)))));
+            this.lnkConsultaGeral.LinkColor = System.Drawing.Color.Black;
             this.lnkConsultaGeral.Location = new System.Drawing.Point(284, 20);
             this.lnkConsultaGeral.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lnkConsultaGeral.Name = "lnkConsultaGeral";
@@ -242,7 +237,7 @@ namespace projetoetec
             this.lnkConsultaDia.AutoSize = true;
             this.lnkConsultaDia.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkConsultaDia.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lnkConsultaDia.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(158)))), ((int)(((byte)(23)))));
+            this.lnkConsultaDia.LinkColor = System.Drawing.Color.Black;
             this.lnkConsultaDia.Location = new System.Drawing.Point(87, 20);
             this.lnkConsultaDia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lnkConsultaDia.Name = "lnkConsultaDia";
@@ -262,14 +257,25 @@ namespace projetoetec
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 51);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmConsultaGeral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(215)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(736, 449);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlOpc);
-            this.Controls.Add(this.picMudarTema);
             this.Controls.Add(this.pnlConsultaGeral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -280,10 +286,10 @@ namespace projetoetec
             this.Text = "Consulta Geral";
             this.pnlConsultaGeral.ResumeLayout(false);
             this.pnlConsultaGeral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMudarTema)).EndInit();
             this.pnlOpc.ResumeLayout(false);
             this.pnlOpc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,7 +303,6 @@ namespace projetoetec
         private System.Windows.Forms.DateTimePicker dtpCalendario;
         private System.Windows.Forms.Label lblCalendario;
         private System.Windows.Forms.Button btnGerar;
-        private System.Windows.Forms.PictureBox picMudarTema;
         private System.Windows.Forms.Panel pnlOpc;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel lnkCadastro;
@@ -307,5 +312,6 @@ namespace projetoetec
         private System.Windows.Forms.LinkLabel lnkConsultaGeral;
         private System.Windows.Forms.LinkLabel lnkConsultaDia;
         private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

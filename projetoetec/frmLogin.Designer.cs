@@ -31,6 +31,8 @@ namespace projetoetec
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.lnkCadastrar = new System.Windows.Forms.LinkLabel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.lblSenha = new System.Windows.Forms.Label();
@@ -46,7 +48,9 @@ namespace projetoetec
             // 
             // pnlLogin
             // 
-            this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(43)))), ((int)(((byte)(51)))));
+            this.pnlLogin.BackColor = System.Drawing.Color.Black;
+            this.pnlLogin.Controls.Add(this.lnkCadastrar);
+            this.pnlLogin.Controls.Add(this.checkBox1);
             this.pnlLogin.Controls.Add(this.btnEntrar);
             this.pnlLogin.Controls.Add(this.picLogo);
             this.pnlLogin.Controls.Add(this.lblSenha);
@@ -56,14 +60,41 @@ namespace projetoetec
             this.pnlLogin.Location = new System.Drawing.Point(219, 112);
             this.pnlLogin.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLogin.Name = "pnlLogin";
-            this.pnlLogin.Size = new System.Drawing.Size(288, 303);
+            this.pnlLogin.Size = new System.Drawing.Size(288, 310);
             this.pnlLogin.TabIndex = 0;
+            // 
+            // lnkCadastrar
+            // 
+            this.lnkCadastrar.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
+            this.lnkCadastrar.AutoSize = true;
+            this.lnkCadastrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
+            this.lnkCadastrar.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
+            this.lnkCadastrar.Location = new System.Drawing.Point(116, 288);
+            this.lnkCadastrar.Name = "lnkCadastrar";
+            this.lnkCadastrar.Size = new System.Drawing.Size(52, 13);
+            this.lnkCadastrar.TabIndex = 5;
+            this.lnkCadastrar.TabStop = true;
+            this.lnkCadastrar.Text = "Cadastrar";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Consolas", 7F, System.Drawing.FontStyle.Bold);
+            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
+            this.checkBox1.Location = new System.Drawing.Point(78, 220);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(89, 16);
+            this.checkBox1.TabIndex = 4;
+            this.checkBox1.Text = "Mostrar senha";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // btnEntrar
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(225)))), ((int)(((byte)(104)))));
+            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEntrar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Location = new System.Drawing.Point(78, 261);
+            this.btnEntrar.ForeColor = System.Drawing.Color.Black;
+            this.btnEntrar.Location = new System.Drawing.Point(78, 250);
             this.btnEntrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(128, 29);
@@ -86,8 +117,8 @@ namespace projetoetec
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(215)))));
-            this.lblSenha.Location = new System.Drawing.Point(115, 192);
+            this.lblSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
+            this.lblSenha.Location = new System.Drawing.Point(115, 176);
             this.lblSenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(54, 19);
@@ -99,8 +130,8 @@ namespace projetoetec
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(215)))));
-            this.lblUsuario.Location = new System.Drawing.Point(106, 141);
+            this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
+            this.lblUsuario.Location = new System.Drawing.Point(106, 133);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(72, 19);
@@ -109,9 +140,10 @@ namespace projetoetec
             // 
             // txtSenha
             // 
-            this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(215)))));
+            this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(184)))), ((int)(((byte)(228)))));
+            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSenha.Font = new System.Drawing.Font("Wingdings", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.txtSenha.Location = new System.Drawing.Point(78, 213);
+            this.txtSenha.Location = new System.Drawing.Point(78, 195);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenha.MaxLength = 25;
             this.txtSenha.Name = "txtSenha";
@@ -123,9 +155,10 @@ namespace projetoetec
             // 
             // txtUsuario
             // 
-            this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(215)))));
+            this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(184)))), ((int)(((byte)(228)))));
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsuario.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(78, 162);
+            this.txtUsuario.Location = new System.Drawing.Point(78, 153);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.MaxLength = 25;
             this.txtUsuario.Name = "txtUsuario";
@@ -137,7 +170,7 @@ namespace projetoetec
             // 
             this.lblBemvindo.AutoSize = true;
             this.lblBemvindo.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBemvindo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(50)))));
+            this.lblBemvindo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
             this.lblBemvindo.Location = new System.Drawing.Point(40, 34);
             this.lblBemvindo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBemvindo.Name = "lblBemvindo";
@@ -149,6 +182,7 @@ namespace projetoetec
             // 
             // picMudarTema
             // 
+            this.picMudarTema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(170)))), ((int)(((byte)(246)))));
             this.picMudarTema.Image = ((System.Drawing.Image)(resources.GetObject("picMudarTema.Image")));
             this.picMudarTema.Location = new System.Drawing.Point(0, -2);
             this.picMudarTema.Name = "picMudarTema";
@@ -161,7 +195,7 @@ namespace projetoetec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(215)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(736, 449);
             this.Controls.Add(this.picMudarTema);
             this.Controls.Add(this.lblBemvindo);
@@ -193,6 +227,8 @@ namespace projetoetec
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Label lblBemvindo;
         private System.Windows.Forms.PictureBox picMudarTema;
+        private System.Windows.Forms.LinkLabel lnkCadastrar;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
